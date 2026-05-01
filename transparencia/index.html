@@ -1,1 +1,134 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portal de Transparência | Aspirantes</title>
+  <meta name="description" content="Portal de Transparência da Aspirantes: documentos institucionais, financeiros e governança." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <style>
+    body{background:#f5f9ff;color:#12243a}
+    .header{background:rgba(255,255,255,.85)}
+    .header.scrolled{background:rgba(255,255,255,.96)}
+    .menu a,.brand{color:#12243a}
+    .section-alt{background:#eef5ff}
+    .card,.accordion-item{
+      background:#fff;border-color:rgba(18,36,58,.12);box-shadow:0 12px 30px rgba(0,0,0,.08)
+    }
+    .kicker{color:#0b8e6d}
+    .subtitle,.card p,.small,.footer p{color:#4f6480}
+    .footer{background:#f0f6ff;border-top:1px solid rgba(18,36,58,.1)}
+    .footer a{color:#0a8a6a}
+    .docs-list{display:grid;gap:10px;padding:0;list-style:none}
+    .docs-list a{
+      display:flex;justify-content:space-between;align-items:center;
+      text-decoration:none;color:#123;background:#f8fbff;padding:12px 14px;border-radius:10px;border:1px solid #dce8f6
+    }
+    .docs-list a:hover{border-color:#0ba77f}
+    .accordion{display:grid;gap:12px}
+    .accordion-item{border:1px solid rgba(18,36,58,.12);border-radius:12px;overflow:hidden}
+    .accordion-btn{
+      width:100%;text-align:left;background:#fff;border:none;padding:14px 16px;
+      font-size:1rem;font-weight:700;color:#173154;cursor:pointer
+    }
+    .accordion-content{
+      max-height:0;overflow:hidden;transition:max-height .25s ease;
+      padding:0 16px
+    }
+    .accordion-content-inner{padding:0 0 14px}
+  </style>
+</head>
+<body>
+  <header class="header">
+    <nav class="container nav">
+      <a href="../index.html" class="brand">
+        <span class="brand-dot"></span><span>Aspirantes</span>
+      </a>
+      <ul class="menu" style="display:flex">
+        <li><a href="../index.html">Página inicial</a></li>
+        <li><a class="btn btn-sm btn-outline" href="./">Transparência</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
+    <section class="section">
+      <div class="container">
+        <p class="kicker">Governança e prestação de contas</p>
+        <h1 style="margin:0 0 12px;font-size:clamp(1.8rem,4vw,2.8rem)">Portal de Transparência</h1>
+        <p class="subtitle">Acompanhe documentos institucionais, relatórios e informações financeiras da Aspirantes.</p>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="accordion" id="accordion">
+          <article class="accordion-item">
+            <button class="accordion-btn">Documentos institucionais</button>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <ul class="docs-list">
+                  <li><a href="#" target="_blank" rel="noopener">Estatuto Social (PDF) <span>↗</span></a></li>
+                  <li><a href="#" target="_blank" rel="noopener">Ata de Fundação (PDF) <span>↗</span></a></li>
+                  <li><a href="#" target="_blank" rel="noopener">Composição da Diretoria (PDF) <span>↗</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="accordion-item">
+            <button class="accordion-btn">Relatórios e atividades</button>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <ul class="docs-list">
+                  <li><a href="#" target="_blank" rel="noopener">Relatório Anual 2025 (PDF) <span>↗</span></a></li>
+                  <li><a href="#" target="_blank" rel="noopener">Plano de Trabalho 2026 (PDF) <span>↗</span></a></li>
+                  <li><a href="#" target="_blank" rel="noopener">Indicadores de Impacto (PDF) <span>↗</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="accordion-item">
+            <button class="accordion-btn">Financeiro</button>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <ul class="docs-list">
+                  <li><a href="#" target="_blank" rel="noopener">Demonstrações Financeiras 2025 (PDF) <span>↗</span></a></li>
+                  <li><a href="#" target="_blank" rel="noopener">Parecer de Auditoria 2025 (PDF) <span>↗</span></a></li>
+                  <li><a href="#" target="_blank" rel="noopener">Relação de Convênios e Parcerias (PDF) <span>↗</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="accordion-item">
+            <button class="accordion-btn">Políticas e conformidade</button>
+            <div class="accordion-content">
+              <div class="accordion-content-inner">
+                <ul class="docs-list">
+                  <li><a href="#" target="_blank" rel="noopener">Código de Ética (PDF) <span>↗</span></a></li>
+                  <li><a href="#" target="_blank" rel="noopener">Política de Privacidade (PDF) <span>↗</span></a></li>
+                  <li><a href="#" target="_blank" rel="noopener">Canal de Denúncias (PDF) <span>↗</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> Aspirantes. Portal de Transparência.</p>
+      <a href="../index.html">Voltar ao site principal</a>
+    </div>
+  </footer>
+
+  <script src="./transparencia.js"></script>
+</body>
+</html>
