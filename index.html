@@ -1,1 +1,223 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aspirantes | Transformando potencial em futuro</title>
+  <meta name="description" content="Site oficial da Aspirantes: projetos, impacto social, transparência e contato." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+  <header class="header" id="topo">
+    <nav class="container nav">
+      <a href="#topo" class="brand">
+        <span class="brand-dot"></span>
+        <span>Aspirantes</span>
+      </a>
 
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="menu" id="menu">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#atuacao">Atuação</a></li>
+        <li><a href="#impacto">Impacto</a></li>
+        <li><a href="#como-ajudar">Como ajudar</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a class="btn btn-sm btn-outline" href="./transparencia/">Transparência</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero section">
+      <div class="bg-blur blur-1"></div>
+      <div class="bg-blur blur-2"></div>
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="kicker">Organização Social • Educação • Esporte</p>
+          <h1>
+            Formamos <span class="text-gradient">aspirantes</span> em protagonistas
+            do próprio futuro.
+          </h1>
+          <p class="subtitle">
+            Desenvolvemos jovens por meio de educação, cultura, esporte e oportunidades,
+            com governança, impacto real e transparência.
+          </p>
+          <div class="hero-actions">
+            <a href="#como-ajudar" class="btn btn-primary">Apoiar agora</a>
+            <a href="#sobre" class="btn btn-ghost">Conhecer a instituição</a>
+          </div>
+        </div>
+
+        <aside class="hero-card reveal delay-1">
+          <h3>Dados institucionais</h3>
+          <ul class="institution-list">
+            <li><strong>Nome:</strong> <span data-org="nome">Aspirantes</span></li>
+            <li><strong>CNPJ:</strong> <span data-org="cnpj">00.000.000/0001-00</span></li>
+            <li><strong>Sede:</strong> <span data-org="sede">Cidade/UF</span></li>
+            <li><strong>Fundação:</strong> <span data-org="fundacao">00/00/0000</span></li>
+          </ul>
+          <p class="small">
+            * Atualize estes dados conforme o estatuto e documentos oficiais.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">Sobre a Aspirantes</p>
+          <h2>Missão, visão e valores</h2>
+        </div>
+
+        <div class="cards-3">
+          <article class="card reveal">
+            <h3>Missão</h3>
+            <p data-org="missao">
+              Promover desenvolvimento integral de jovens em situação de vulnerabilidade social.
+            </p>
+          </article>
+          <article class="card reveal delay-1">
+            <h3>Visão</h3>
+            <p data-org="visao">
+              Ser referência nacional em transformação social por meio da educação e do esporte.
+            </p>
+          </article>
+          <article class="card reveal delay-2">
+            <h3>Valores</h3>
+            <p data-org="valores">
+              Ética, inclusão, disciplina, diversidade, excelência e transparência.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ATUAÇÃO -->
+    <section id="atuacao" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">Frentes de atuação</p>
+          <h2>Programas que geram oportunidade</h2>
+        </div>
+
+        <div class="cards-3">
+          <article class="card card-hover reveal">
+            <h3>Educação</h3>
+            <p>Reforço escolar, apoio pedagógico, mentoria e acompanhamento individual.</p>
+          </article>
+          <article class="card card-hover reveal delay-1">
+            <h3>Esporte e cultura</h3>
+            <p>Atividades esportivas e culturais para formação de competências socioemocionais.</p>
+          </article>
+          <article class="card card-hover reveal delay-2">
+            <h3>Empregabilidade</h3>
+            <p>Capacitação, trilhas de carreira, oficinas práticas e conexão com empresas parceiras.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMPACTO -->
+    <section id="impacto" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">Impacto social</p>
+          <h2>Números que contam histórias</h2>
+        </div>
+
+        <div class="stats">
+          <div class="stat reveal">
+            <span class="stat-num" data-counter="1200">0</span>
+            <span class="stat-label">Jovens atendidos</span>
+          </div>
+          <div class="stat reveal delay-1">
+            <span class="stat-num" data-counter="84">0</span>
+            <span class="stat-label">% de permanência</span>
+          </div>
+          <div class="stat reveal delay-2">
+            <span class="stat-num" data-counter="32">0</span>
+            <span class="stat-label">Parceiros ativos</span>
+          </div>
+          <div class="stat reveal delay-3">
+            <span class="stat-num" data-counter="15">0</span>
+            <span class="stat-label">Projetos em andamento</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMO AJUDAR -->
+    <section id="como-ajudar" class="section section-alt">
+      <div class="container cta reveal">
+        <div>
+          <p class="kicker">Faça parte</p>
+          <h2>Seu apoio transforma trajetórias</h2>
+          <p>
+            Contribua com doações, voluntariado ou parcerias institucionais.
+            Toda contribuição acelera impacto real na vida de centenas de jovens.
+          </p>
+        </div>
+        <div class="cta-actions">
+          <a href="#contato" class="btn btn-primary">Quero apoiar</a>
+          <a href="./transparencia/" class="btn btn-outline">Ver Transparência</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">Contato</p>
+          <h2>Fale com a Aspirantes</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="card reveal">
+            <h3>Informações</h3>
+            <ul class="contact-list">
+              <li><strong>Email:</strong> contato@aspirantes.org.br</li>
+              <li><strong>Telefone:</strong> (00) 0000-0000</li>
+              <li><strong>Endereço:</strong> Rua Exemplo, 123 — Cidade/UF</li>
+            </ul>
+          </div>
+
+          <form class="card reveal delay-1" onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso!');">
+            <h3>Envie uma mensagem</h3>
+            <label>Nome
+              <input type="text" required placeholder="Seu nome" />
+            </label>
+            <label>Email
+              <input type="email" required placeholder="seu@email.com" />
+            </label>
+            <label>Mensagem
+              <textarea rows="4" required placeholder="Escreva sua mensagem"></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> Aspirantes. Todos os direitos reservados.</p>
+      <a href="./transparencia/">Portal de Transparência</a>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Voltar ao topo">↑</button>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
