@@ -1,4 +1,3 @@
-// Dados institucionais (preencher com os dados reais do estatuto)
 const ORG_DATA = {
   nome: "Aspirantes",
   cnpj: "00.000.000/0001-00",
@@ -9,42 +8,37 @@ const ORG_DATA = {
   valores: "Ética, inclusão, disciplina, diversidade, excelência e transparência."
 };
 
-// Preenche campos com data-org
 Object.entries(ORG_DATA).forEach(([key, value]) => {
-  document.querySelectorAll(`[data-org="${key}"]`).forEach(el => {
-    el.textContent = value;
-  });
+  document.querySelectorAll(`[data-org="${key}"]`).forEach(el => el.textContent = value);
 });
 
-// Ano automático
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// Header ao rolar
 const header = document.querySelector(".header");
 const toTop = document.getElementById("toTop");
+
 window.addEventListener("scroll", () => {
   const y = window.scrollY;
   header.classList.toggle("scrolled", y > 12);
   toTop.classList.toggle("show", y > 420);
 });
 
-// Voltar ao topo
 toTop.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-// Mobile menu
 const menuBtn = document.getElementById("menuBtn");
 const menu = document.getElementById("menu");
+
 menuBtn.addEventListener("click", () => {
   const isOpen = menu.classList.toggle("open");
   menuBtn.setAttribute("aria-expanded", String(isOpen));
 });
+
 menu.querySelectorAll("a").forEach(link => {
   link.addEventListener("click", () => menu.classList.remove("open"));
 });
 
-// Reveal on scroll
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) entry.target.classList.add("in");
@@ -53,7 +47,6 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
 
-// Counters
 const counters = document.querySelectorAll("[data-counter]");
 const counterObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -76,3 +69,19 @@ const counterObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.4 });
 
 counters.forEach(c => counterObserver.observe(c));
+
+/* tilt suave no card principal */
+const heroCard = document.querySelector(".hero-card");
+if (heroCard && window.matchMedia("(min-width: 981px)").matches) {
+  heroCard.addEventListener("mousemove", (e) => {
+    const r = heroCard.getBoundingClientRect();
+    const x = (e.clientX - r.left) / r.width;
+    const y = (e.clientY - r.top) / r.height;
+    const rx = (0.5 - y) * 8;
+    const ry = (x - 0.5) * 10;
+    heroCard.style.transform = `perspective(900px) rotateX(${rx}deg) rotateY(${ry}deg)`;
+  });
+  heroCard.addEventListener("mouseleave", () => {
+    heroCard.style.transform = "perspective(900px) rotateX(0deg) rotateY(0deg)";
+  });
+}
