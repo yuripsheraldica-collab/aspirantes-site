@@ -5,40 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portal de Transparência | Aspirantes</title>
   <meta name="description" content="Portal de Transparência da Aspirantes: documentos institucionais, financeiros e governança." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <!-- cache-busting -->
+  <link rel="stylesheet" href="../assets/css/styles.css?v=3" />
+
   <style>
-    body{background:#f5f9ff;color:#12243a}
-    .header{background:rgba(255,255,255,.85)}
-    .header.scrolled{background:rgba(255,255,255,.96)}
-    .menu a,.brand{color:#12243a}
-    .section-alt{background:#eef5ff}
-    .card,.accordion-item{
-      background:#fff;border-color:rgba(18,36,58,.12);box-shadow:0 12px 30px rgba(0,0,0,.08)
+    /* Ajustes específicos da transparência mantendo a identidade visual do site */
+    .trans-hero{
+      padding-top: 92px;
+      padding-bottom: 40px;
+      background:
+        radial-gradient(800px 300px at 10% 0%, rgba(255,122,0,.18), transparent 60%),
+        radial-gradient(700px 280px at 100% 0%, rgba(109,92,255,.2), transparent 60%);
     }
-    .kicker{color:#0b8e6d}
-    .subtitle,.card p,.small,.footer p{color:#4f6480}
-    .footer{background:#f0f6ff;border-top:1px solid rgba(18,36,58,.1)}
-    .footer a{color:#0a8a6a}
+
     .docs-list{display:grid;gap:10px;padding:0;list-style:none}
     .docs-list a{
       display:flex;justify-content:space-between;align-items:center;
-      text-decoration:none;color:#123;background:#f8fbff;padding:12px 14px;border-radius:10px;border:1px solid #dce8f6
+      text-decoration:none;color:var(--text);
+      background:rgba(255,255,255,.03);
+      padding:12px 14px;border-radius:10px;
+      border:1px solid rgba(255,255,255,.12);
+      transition:.2s ease;
     }
-    .docs-list a:hover{border-color:#0ba77f}
+    .docs-list a:hover{
+      border-color:rgba(255,122,0,.65);
+      transform:translateY(-2px);
+    }
+
     .accordion{display:grid;gap:12px}
-    .accordion-item{border:1px solid rgba(18,36,58,.12);border-radius:12px;overflow:hidden}
+    .accordion-item{
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:12px;overflow:hidden;
+      background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.015));
+      box-shadow:var(--shadow);
+    }
     .accordion-btn{
-      width:100%;text-align:left;background:#fff;border:none;padding:14px 16px;
-      font-size:1rem;font-weight:700;color:#173154;cursor:pointer
+      width:100%;text-align:left;background:transparent;border:none;padding:14px 16px;
+      font-size:1rem;font-weight:800;color:var(--text);cursor:pointer;
     }
     .accordion-content{
       max-height:0;overflow:hidden;transition:max-height .25s ease;
-      padding:0 16px
+      padding:0 16px;
     }
     .accordion-content-inner{padding:0 0 14px}
+
+    .top-actions{display:flex;gap:10px;flex-wrap:wrap}
   </style>
 </head>
 <body>
@@ -55,15 +69,18 @@
   </header>
 
   <main>
-    <section class="section">
+    <section class="section trans-hero">
       <div class="container">
         <p class="kicker">Governança e prestação de contas</p>
         <h1 style="margin:0 0 12px;font-size:clamp(1.8rem,4vw,2.8rem)">Portal de Transparência</h1>
         <p class="subtitle">Acompanhe documentos institucionais, relatórios e informações financeiras da Aspirantes.</p>
+        <div class="top-actions" style="margin-top:16px">
+          <a href="../index.html" class="btn btn-ghost">Voltar para o site</a>
+        </div>
       </div>
     </section>
 
-    <section class="section section-alt">
+    <section class="section section-alt" style="padding-top:40px">
       <div class="container">
         <div class="accordion" id="accordion">
           <article class="accordion-item">
@@ -129,6 +146,7 @@
     </div>
   </footer>
 
-  <script src="./transparencia.js"></script>
+  <!-- cache-busting -->
+  <script src="./transparencia.js?v=3"></script>
 </body>
 </html>
