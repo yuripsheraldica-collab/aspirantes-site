@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aspirantes | Transformando potencial em futuro</title>
   <meta name="description" content="Site oficial da Aspirantes: projetos, impacto social, transparência e contato." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <!-- cache-busting -->
+  <link rel="stylesheet" href="./assets/css/styles.css?v=3" />
 </head>
 <body>
   <header class="header" id="topo">
@@ -34,16 +35,15 @@
   </header>
 
   <main>
-    <!-- HERO -->
     <section class="hero section">
       <div class="bg-blur blur-1"></div>
       <div class="bg-blur blur-2"></div>
+
       <div class="container hero-grid">
         <div class="hero-content reveal">
           <p class="kicker">Organização Social • Educação • Esporte</p>
           <h1>
-            Formamos <span class="text-gradient">aspirantes</span> em protagonistas
-            do próprio futuro.
+            Formamos <span class="text-gradient">aspirantes</span> em protagonistas do próprio futuro.
           </h1>
           <p class="subtitle">
             Desenvolvemos jovens por meio de educação, cultura, esporte e oportunidades,
@@ -63,14 +63,11 @@
             <li><strong>Sede:</strong> <span data-org="sede">Cidade/UF</span></li>
             <li><strong>Fundação:</strong> <span data-org="fundacao">00/00/0000</span></li>
           </ul>
-          <p class="small">
-            * Atualize estes dados conforme o estatuto e documentos oficiais.
-          </p>
+          <p class="small">* Atualize estes dados conforme o estatuto e documentos oficiais.</p>
         </aside>
       </div>
     </section>
 
-    <!-- SOBRE -->
     <section id="sobre" class="section">
       <div class="container">
         <div class="section-head reveal">
@@ -81,27 +78,20 @@
         <div class="cards-3">
           <article class="card reveal">
             <h3>Missão</h3>
-            <p data-org="missao">
-              Promover desenvolvimento integral de jovens em situação de vulnerabilidade social.
-            </p>
+            <p data-org="missao">Promover desenvolvimento integral de jovens em situação de vulnerabilidade social.</p>
           </article>
           <article class="card reveal delay-1">
             <h3>Visão</h3>
-            <p data-org="visao">
-              Ser referência nacional em transformação social por meio da educação e do esporte.
-            </p>
+            <p data-org="visao">Ser referência nacional em transformação social por meio da educação e do esporte.</p>
           </article>
           <article class="card reveal delay-2">
             <h3>Valores</h3>
-            <p data-org="valores">
-              Ética, inclusão, disciplina, diversidade, excelência e transparência.
-            </p>
+            <p data-org="valores">Ética, inclusão, disciplina, diversidade, excelência e transparência.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ATUAÇÃO -->
     <section id="atuacao" class="section section-alt">
       <div class="container">
         <div class="section-head reveal">
@@ -126,7 +116,6 @@
       </div>
     </section>
 
-    <!-- IMPACTO -->
     <section id="impacto" class="section">
       <div class="container">
         <div class="section-head reveal">
@@ -155,7 +144,6 @@
       </div>
     </section>
 
-    <!-- COMO AJUDAR -->
     <section id="como-ajudar" class="section section-alt">
       <div class="container cta reveal">
         <div>
@@ -173,7 +161,6 @@
       </div>
     </section>
 
-    <!-- CONTATO -->
     <section id="contato" class="section">
       <div class="container">
         <div class="section-head reveal">
@@ -218,6 +205,7 @@
 
   <button class="to-top" id="toTop" aria-label="Voltar ao topo">↑</button>
 
-  <script src="./assets/js/main.js"></script>
+  <!-- cache-busting -->
+  <script src="./assets/js/main.js?v=3"></script>
 </body>
 </html>
